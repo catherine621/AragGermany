@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.success-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #150d1e;
+    color: white;
+}
+
+.success-left {
+    width: 60%;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.success-left h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #ff4c4c;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.stat-item h3 {
+    font-size: 22px;
+    color: #ff4c4c;
+    margin: 0;
+}
+
+.stat-item p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0 0;
+}
+
+/* Right Section */
+.success-right {
+    width: 35%;
+    text-align: center;
+    color: #ff4c4c;
+}
+
+.success-right h2 {
+    font-size: 36px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.only-on {
+    font-size: 22px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.arag-logo {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+}

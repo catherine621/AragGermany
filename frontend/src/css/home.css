@@ -1,0 +1,108 @@
+.home {
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero {
+    background: url("../assets/hero-image.jpg") center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn-primary {
+    background-color: orange;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 10px;
+  }
+  
+  .btn-secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background: #f8f8f8;
+  }
+  
+  .stat-box {
+    text-align: center;
+  }
+  
+  .services {
+    text-align: center;
+    padding: 50px;
+    background: #1a1a1a;
+    color: white;
+  }
+  
+  .services-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .service-item {
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .process {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .process-steps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .step {
+    padding: 10px 15px;
+    background: #ddd;
+    border-radius: 5px;
+  }
+  
+  .testimonials {
+    text-align: center;
+    padding: 50px;
+    background: #fff;
+  }
+  
+  .contact {
+    text-align: center;
+    padding: 50px;
+    background: #f8f8f8;
+  }
+  

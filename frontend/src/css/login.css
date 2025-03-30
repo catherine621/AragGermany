@@ -1,0 +1,126 @@
+/* Full-screen flex container to center the login box */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background: #f4f4f4; /* Light gray background */
+}
+
+/* Centered login box */
+.login-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+/* Title and subtitle */
+.login-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.login-subtitle {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* Login form fields */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Password input with toggle icon */
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+    text-align: right;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Login Button */
+.login-button {
+    padding: 10px;
+    background: #ff5a3d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background: #e04b2c;
+}
+
+/* Separator for social login */
+.separator {
+    margin: 15px 0;
+    font-size: 14px;
+    color: gray;
+}
+
+/* Social login buttons */
+.social-login span {
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* Register link */
+.register-text {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.register-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+/* Error message */
+.error-message {
+    color: black; /* Set text color to black */
+    font-size: 14px;
+    margin-top: 10px;
+    background: #ffdddd; /* Light red background */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ff5a3d; /* Add a border for better visibility */
+}

@@ -1,0 +1,34 @@
+.question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .question-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .question-container label {
+    margin: 10px 0;
+  }
+  
+  .question-container select {
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+  
+  .question-container button {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .question-container button:hover {
+    background-color: #45a049;
+  }
+  

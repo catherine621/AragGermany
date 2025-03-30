@@ -1,0 +1,92 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #10020d;
+    color: #ff4c4c;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+/* Services Section */
+.services-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 80px;
+
+    min-height: 100vh;
+    gap: 40px;
+}
+
+/* Left Side - What We Offer */
+.services-left {
+    width: 40%;
+}
+
+.services-label {
+    color: #ff4c4c;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #ff4c4c;
+}
+
+.services-description {
+    font-size: 16px;
+    color: #ff4c4c;
+    margin: 20px 0;
+}
+
+.get-started {
+    color: #ff4c4c;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Right Side - Cards */
+.services-right {
+    width: 55%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.service-card {
+    background-color: #1a071d;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: white;
+}
+
+.service-card p {
+    color: #ff4c4c;
+    font-size: 14px;
+}
