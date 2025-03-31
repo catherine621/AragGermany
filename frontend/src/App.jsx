@@ -13,6 +13,8 @@ import TaxForm1 from "./pages/TaxForm1";
 import TaxForm2 from "./pages/TaxForm2";
 import TaxForm3 from "./pages/TaxForm3";
 import TaxForm4 from "./pages/TaxForm4";
+import Navbar from "./pages/Navbar";
+
 
 function App() {
 
@@ -20,6 +22,7 @@ function App() {
 
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path ="/signin" element={<SignIn />} />

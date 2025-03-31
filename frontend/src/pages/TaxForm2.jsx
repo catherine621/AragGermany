@@ -1,8 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../css/TaxForm.css";
 
-const TaxForm1 = () => {
+const TaxForm2 = () => {
   const [formData, setFormData] = useState({});
+  const [userId, setUserId] = useState(null);
+
+  // Fetch user ID from localStorage
+  useEffect(() => {
+    const storedUserId = localStorage.getItem("user_id");
+    if (!storedUserId) {
+      console.error("No user ID found in localStorage.");
+    } else {
+      console.log("Retrieved user ID from localStorage:", storedUserId);
+      setUserId(storedUserId);
+    }
+  }, []);
 
   const handleChange = (e, field) => {
     setFormData({ ...formData, [field]: e.target.value });
@@ -10,35 +22,49 @@ const TaxForm1 = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("🔵 Sending data:", formData);
+
+    if (!userId) {
+      alert("Error: User ID is missing!");
+      return;
+    }
+
+    const payload = {
+      user_id: userId, 
+      ...formData
+    };
+
+    console.log("🔵 Sending payload:", payload);
 
     try {
-        const response = await fetch("http://127.0.0.1:5000/process_tax_form", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(formData)
-        });
+      const response = await fetch("http://127.0.0.1:5002/process_tax_form", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(payload)
+      });
 
-        if (!response.ok) {
-            const errorText = await response.text();
-            throw new Error(errorText || "Failed to process tax form");
-        }
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(errorText || "Failed to process tax form");
+      }
 
-        // ✅ Convert the response to a blob and trigger download
-        const blob = await response.blob();
-        const url = window.URL.createObjectURL(blob);
-        const a = document.createElement("a");
-        a.href = url;
-        a.download = "filled_tax_form.pdf";
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        window.URL.revokeObjectURL(url);
+      // ✅ Convert the response to a blob and trigger download
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "filled_tax_form.pdf";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      window.URL.revokeObjectURL(url);
+
+      alert("✅ Tax form processed successfully! Check your Downloads folder.");
 
     } catch (error) {
-        console.error("🚨 Error:", error.message);
+      console.error("🚨 Error:", error.message);
+      alert(`Error: ${error.message}`);
     }
   };
 
@@ -214,4 +240,4 @@ const TaxForm1 = () => {
   );
 };
 
-export default TaxForm1;
+export default TaxForm2;
