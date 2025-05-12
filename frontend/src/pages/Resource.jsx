@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "../css/resource.css";
+import { useNavigate } from "react-router-dom";
+
 
 const TaxForms = () => {
   const [taxForms, setTaxForms] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchTaxForms = async () => {
@@ -77,7 +80,7 @@ const TaxForms = () => {
 
   return (
     <div className="tax-forms-container">
-      <h2>Your Tax Forms</h2>
+      <h2 className="p">Your Tax Forms</h2>
       {taxForms.length === 0 ? (
         <p>No tax forms available</p>
       ) : (
@@ -91,6 +94,18 @@ const TaxForms = () => {
           ))}
         </ul>
       )}
+     <button
+  className="create-new-button"
+  onClick={() => {
+    console.log("Button clicked! Navigating...");
+    navigate("/question");
+  }}
+>
+  Create New
+</button>
+
+
+
     </div>
   );
 };

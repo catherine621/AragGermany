@@ -1,34 +1,77 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #eef2f3; /* Softer gray background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+/* Question Page Container */
 .question-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #f0f0f0;
-  }
-  
-  .question-container h2 {
-    margin-bottom: 20px;
-  }
-  
-  .question-container label {
-    margin: 10px 0;
-  }
-  
-  .question-container select {
-    margin-bottom: 20px;
-    padding: 5px;
-  }
-  
-  .question-container button {
-    padding: 5px 10px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .question-container button:hover {
-    background-color: #45a049;
-  }
-  
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.question-container h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 22px;
+}
+
+/* Labels */
+.question-container label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  margin: 12px 0;
+}
+
+/* Select Dropdowns */
+.question-container select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.question-container select:focus {
+  border-color: #ff5a3d;
+}
+
+/* Submit Button */
+.question-container button {
+  padding: 12px;
+  background: #ff5a3d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.question-container select:focus {
+  border-color: black; /* Change focus border to black */
+}

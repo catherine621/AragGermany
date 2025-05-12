@@ -106,7 +106,6 @@ body {
     gap: 15px;
     margin-top: 20px;
   }
-  
   .btn {
     padding: 10px 20px;
     border: none;
@@ -115,17 +114,19 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    background: hwb(15 16% 10%);
+    color:white;
+    width: 80%;  /* Increased width */
+    max-width: 400px; /* Ensures it doesn't stretch too much on large screens */
+    display: block; 
+    margin: 20px auto;
+    
+
   }
   
-  .btn.red {
-    background: #d9534f;
-    color: white;
-  }
+
   
-  .btn.red:hover {
-    background: #c9302c;
-  }
-  
+ 
   .form-footer {
     display: flex;
     justify-content: center;
@@ -162,4 +163,10 @@ body {
       flex-direction: column;
     }
   }
-  
+  .o{
+    color: #333;
+  }
+  .p{
+    color: #333;
+    text-align: center;
+  }

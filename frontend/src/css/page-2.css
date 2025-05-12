@@ -14,6 +14,7 @@ body {
     padding: 40px;
     background-color: #150d1e;
     color: white;
+    font-size: 28px;
 }
 
 .success-left {
@@ -26,7 +27,7 @@ body {
 }
 
 .success-left h2 {
-    font-size: 28px;
+    font-size: 60px;
     margin-bottom: 20px;
 }
 
@@ -37,17 +38,18 @@ body {
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 10px;
+
 }
 
 .stat-item h3 {
-    font-size: 22px;
+    font-size: 2rem;
     color: #ff4c4c;
     margin: 0;
 }
 
 .stat-item p {
-    font-size: 14px;
+    font-size: 30px;
     color: #555;
     margin: 5px 0 0;
 }
@@ -57,6 +59,7 @@ body {
     width: 35%;
     text-align: center;
     color: #ff4c4c;
+    font-size: 100px;
 }
 
 .success-right h2 {

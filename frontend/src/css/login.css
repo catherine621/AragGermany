@@ -3,8 +3,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: calc(80vh - 60px); /* Adjust for navbar height (60px for example) */
     background: #f4f4f4; /* Light gray background */
+    padding-top: 0; /* Remove any top padding */
 }
 
 /* Centered login box */
@@ -21,6 +22,7 @@
 .login-title {
     font-size: 24px;
     font-weight: bold;
+    color: #333;
 }
 
 .login-subtitle {
@@ -101,6 +103,7 @@ input {
 
 /* Register link */
 .register-text {
+    color: gray;
     font-size: 14px;
     margin-top: 10px;
 }
@@ -114,6 +117,7 @@ input {
 .register-link:hover {
     text-decoration: underline;
 }
+
 /* Error message */
 .error-message {
     color: black; /* Set text color to black */
@@ -123,4 +127,10 @@ input {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ff5a3d; /* Add a border for better visibility */
+}
+
+/* Remove the reveal icon for password input */
+input::-ms-reveal,
+input::-webkit-credentials-auto-fill-button {
+    display: none;
 }

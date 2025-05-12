@@ -53,8 +53,8 @@ function Question({ formData, setFormData }) {
         value={localData.migrant || ""}
       >
         <option value="">Select</option>
-        <option value="migrant">Immigrant</option>
-        <option value="non-migrant">Non-Immigrant</option>
+        <option value="migrant">Migrant</option>
+        <option value="non-migrant">Not-Migrant</option>
       </select>
 
       <button onClick={handleSubmit}>Submit</button>

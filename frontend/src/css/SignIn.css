@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
     background-color: #f8f8f8;
   }
   
@@ -12,7 +12,7 @@
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 350px;
+    width: 390px;
   }
   
   .signin-box h2 {
@@ -48,4 +48,9 @@
     font-weight: bold;
     text-decoration: none;
   }
-  
+  .h{
+    color: #333;
+  }
+  .l{
+    color: #333;
+  }

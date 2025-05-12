@@ -6,48 +6,11 @@ body {
   padding: 0;
 }
 
-/* Sidebar Styling */
-.sidebar {
-  width: 250px;
-  height: 100vh;
-  background-color: #ff6b35;
-  color: white;
-  position: fixed;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.sidebar img {
-  width: 100px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
 
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-  width: 100%;
-}
 
-.sidebar ul li {
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  transition: background 0.3s;
-  font-weight: 500;
-}
 
-.sidebar ul li:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
-}
 
-.sidebar ul li i {
-  margin-right: 10px;
-}
 
 /* Main Content */
 .main-content {
@@ -65,6 +28,9 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%; 
+  margin-top: 20%;
+  
 }
 
 /* Table Styling */
@@ -80,13 +46,17 @@ body {
   padding: 12px;
   border-bottom: 1px solid #ddd;
   font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-right: 13%;
+
+
 }
 
 .forms-list li button {
   background: none;
   border: none;
   color: #ff6b35;
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
 }
 
@@ -130,4 +100,24 @@ body {
   .main-content {
     margin-left: 220px;
   }
+}
+.create-new-button {
+  background-color: #ff6b35;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.create-new-button:hover {
+  background-color: #ff6b35;
+
 }

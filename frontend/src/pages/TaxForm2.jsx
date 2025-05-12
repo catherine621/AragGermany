@@ -70,7 +70,9 @@ const TaxForm2 = () => {
 
   return (
     <div className="form-container">
-      
+                    <h2 className="m">Tax Form for Person Maried and Migrant </h2>
+
+                    <div className="section">
       {[  
         { label: "4. Tax Number", name: "4." },
         { label: "5. To the tax office", name: "5." },
@@ -88,10 +90,11 @@ const TaxForm2 = () => {
             <input type={type} name={name} value={formData[name] || ""} onChange={(e) => handleChange(e, name)} />
           )}
         </div>
-      ))}
-      <h3>General Information</h3>
-      <h2>Taxable person</h2>
-      <h2>Only in case of joint assessment: husband or person A (spouse A / life partner A according to the LPartG)</h2>
+      ))}</div>
+       <div className="section">
+      <h3 className="m">General Information</h3>
+      <h2 className="m">Taxable person</h2>
+      <h2 className="m">Only in case of joint assessment: husband or person A (spouse A / life partner A according to the LPartG)</h2>
       {[
         { label: "7. Telephone inquiries during the day at", name: "7." },
         { label: "8i. Identification number (ID number)", name: "8i." },
@@ -130,8 +133,9 @@ const TaxForm2 = () => {
             <input type={type} name={name} value={formData[name] || ""} onChange={(e) => handleChange(e, name)} />
           )}
         </div>
-      ))}
-      <h2>Only in the case of joint taxation:Wife or person B (spouse B /life parner B according to the LPartG</h2>
+      ))}</div>
+      <div className="section">
+      <h2 className="m">Only in the case of joint taxation:Wife or person B (spouse B /life parner B according to the LPartG</h2>
         {[
         { label: "19. ID number", name: "23." },
         { label: "20. Name", name: "24i." },
@@ -156,7 +160,7 @@ const TaxForm2 = () => {
             <input type={type} name={name} value={formData[name] || ""} onChange={(e) => handleChange(e, name)} />
           )}
         </div>
-      ))}
+      ))}</div>
 
 
 
@@ -165,8 +169,8 @@ const TaxForm2 = () => {
 
 
 
-
-      <h2>Please only fill in lines 23 to 27 if the address details differ from lines 12 to 16.</h2>
+<div className="section">
+      <h2 className="m">Please only fill in lines 23 to 27 if the address details differ from lines 12 to 16.</h2>
       {[
         { label: "23. Street", name: "23." },
         { label: "24i. House Number", name: "24i." },
@@ -190,9 +194,10 @@ const TaxForm2 = () => {
             <input type={type} name={name} value={formData[name] || ""} onChange={(e) => handleChange(e, name)} />
           )}
         </div>
-      ))}
+      ))}</div>
+      <div className="section">
 
-      <h2>Bank Details - Please always specify</h2>
+      <h2 className="m">Bank Details - Please always specify</h2>
 
       {[
         { label: "31. IBAN (domestic financial institution)", name: "31." },
@@ -213,9 +218,10 @@ const TaxForm2 = () => {
           )}
         </div>
       ))}
-        
-      <h2>The tax assesment should not be sent to me/us, but:</h2>
-      <h3>Only fill if tax office does not have the corresponding notification authorization</h3>
+        </div>
+        <div className="section">
+      <h2 className="m">The tax assesment should not be sent to me/us, but:</h2>
+      <h3 className="m">Only fill if tax office does not have the corresponding notification authorization</h3>
       {[
         
         { label: "35. Migration - Name", name: "35." },
@@ -236,7 +242,7 @@ const TaxForm2 = () => {
       ))}
       
       <button className="submit-button" onClick={handleSubmit}>Submit</button>
-    </div>
+    </div></div>
   );
 };
 

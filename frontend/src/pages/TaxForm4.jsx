@@ -70,7 +70,9 @@ const TaxForm4 = () => {
 
   return (
     <div className="form-container">
-      
+      <div className="section">
+      <h2 className="m">Tax Form for Person Maried and not Migrant </h2>
+
       {[  
         { label: "4. Tax Number", name: "4." },
         { label: "5. To the tax office", name: "5." },
@@ -88,7 +90,8 @@ const TaxForm4 = () => {
             <input type={type} name={name} value={formData[name] || ""} onChange={(e) => handleChange(e, name)} />
           )}
         </div>
-      ))}
+      ))}</div>
+      <div className="section">
       <h3>General Information</h3>
       <h2>Taxable person</h2>
       <h2>Only in case of joint assessment: husband or person A (spouse A / life partner A according to the LPartG)</h2>
@@ -130,7 +133,8 @@ const TaxForm4 = () => {
             <input type={type} name={name} value={formData[name] || ""} onChange={(e) => handleChange(e, name)} />
           )}
         </div>
-      ))}
+      ))}</div>
+      <div className="section">
       <h2>Only in the case of joint taxation:Wife or person B (spouse B /life parner B according to the LPartG</h2>
         {[
         { label: "19. ID number", name: "23." },
@@ -156,7 +160,7 @@ const TaxForm4 = () => {
             <input type={type} name={name} value={formData[name] || ""} onChange={(e) => handleChange(e, name)} />
           )}
         </div>
-      ))}
+      ))}</div>
 
 
 
@@ -164,7 +168,7 @@ const TaxForm4 = () => {
 
 
 
-
+<div className="section">
 
       <h2>Please only fill in lines 23 to 27 if the address details differ from lines 12 to 16.</h2>
       {[
@@ -191,7 +195,8 @@ const TaxForm4 = () => {
           )}
         </div>
       ))}
-
+</div>
+<div className="section">
       <h2>Bank Details - Please always specify</h2>
 
       {[
@@ -216,7 +221,7 @@ const TaxForm4 = () => {
         
       
       <button className="submit-button" onClick={handleSubmit}>Submit</button>
-    </div>
+    </div></div>
   );
 };
 

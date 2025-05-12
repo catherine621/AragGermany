@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 CORS(app)  
 
-API_KEY = "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"
+API_KEY = "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"
 
 UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)  
@@ -133,4 +133,4 @@ def translate():
     return send_file(pdf_path, as_attachment=True, download_name="translated_letter.pdf")
 
 if __name__ == "__main__": 
-    app.run(debug=True)
+    app.run(debug=True, port=5000)

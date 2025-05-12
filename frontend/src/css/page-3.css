@@ -26,7 +26,7 @@ body {
 
 .services-label {
     color: #ff4c4c;
-    font-size: 14px;
+    font-size: 28px;
     text-transform: uppercase;
     margin: 0;
 }
@@ -39,10 +39,11 @@ h1 {
 
 .highlight {
     color: #ff4c4c;
+    font-size: 28px;
 }
 
 .services-description {
-    font-size: 16px;
+    font-size: 28px;
     color: #ff4c4c;
     margin: 20px 0;
 }
@@ -52,6 +53,7 @@ h1 {
     font-weight: bold;
     cursor: pointer;
     margin-top: 10px;
+    font-size: 28px;
 }
 
 /* Right Side - Cards */
@@ -89,4 +91,5 @@ h1 {
 .service-card p {
     color: #ff4c4c;
     font-size: 14px;
+    font-size: 28px;
 }

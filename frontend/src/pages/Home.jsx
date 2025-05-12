@@ -5,6 +5,7 @@ import '../css/page-2.css';
 import '../css/page-3.css';
 import '../css/page-4.css';
 import '../css/page-5.css';
+import  xlogo from '../assets/x.png';
 
 // Import images
 import logo from '../assets/logo.png';
@@ -17,28 +18,28 @@ import workBackground from '../assets/work.png';
 
 const Home = () => {
     return (
-        <div>
-            {/* Navigation Bar */}
-            <nav className="navbar">
-                <div className="logo">
-                    <img src={logo} alt="ARAG Logo" />
-                </div>
-                <ul className="nav-links">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/resource">Resource</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/profile">Profile</a></li>
-                    <li><a href ="/login"><button className="login-btn">Log In</button></a></li>
-                    <li>< a href="/signin"> <button className="get-started-btn">Get Started</button></a></li>
-                </ul>
-            </nav>
+        <div><nav className="navbar">
+                    <div className="logo">
+                        <img src={logo} alt="ARAG Logo" />
+                    </div>
+                    <ul className="nav-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/login">Resource</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/login">Profile</a></li>
+                        <li><a href="/login"><button className="login-btn">Log In</button></a></li>
+                        <li><a href="/signin"><button className="get-started-btn">Get Started</button></a></li>
+                    </ul>
+                </nav>
+            
+           
 
             {/* Hero Section */}
             <header
     className="hero-section"
     style={{backgroundImage: `url(${workBackground})`, backgroundSize: 'cover',  backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
     <div className="hero-content">
-        <h2>ARAG Trusted Tax Filing, Simplified for You!</h2>
+        <h2 className='s'>ARAG Trusted Tax Filing, Simplified for You!</h2>
         <p>ARAG's tax filing document generation website offers a seamless and secure platform to create accurate, compliant tax documents.</p>
           </div>
       </header>
@@ -46,7 +47,7 @@ const Home = () => {
             {/* Success Section */}
             <div className="success-section">
                 <div className="success-left">
-                    <h2>15 years and counting of <span className="highlight">success</span>.</h2>
+                    <h2>15 years and counting of Success.</h2>
                     <div className="stats-grid">
                         {[
                             { number: '7 Lakh+', label: 'Translations' },
@@ -76,7 +77,7 @@ const Home = () => {
             <section className="services-section">
                 <div className="services-left">
                     <p className="services-label">| SERVICES</p>
-                    <h1>What we offer<span className="highlight">.</span></h1>
+                    <h1 className='c'>What we offer<span className="highlight">.</span></h1>
                     <p className="services-description">
                         ARAG offers personal insurance, business insurance, and specialized coverage. We provide 24/7 claims support, customizable policies, and tailored risk management solutions.
                     </p>
@@ -104,7 +105,7 @@ const Home = () => {
             <section className="achievements-section">
                 <div className="achievements-left">
                     <p className="section-label">| AWARDS & CERTIFICATIONS</p>
-                    <h1>Our <span className="highlight">8 years </span> of achievements<span className="highlight">.</span></h1>
+                    <h1 className='n'>Our <span className="highlight">8 years </span> of achievements<span className="highlight">.</span></h1>
                     <p className="achievements-description">With our dedication, we've reached remarkable milestones.</p>
                     <div className="achievement-stats">
                         {[
@@ -143,7 +144,7 @@ const Home = () => {
                         {[
                             { href: 'https://wa.me/1234567890', img: 'https://cdn-icons-png.flaticon.com/512/3536/3536445.png', alt: 'WhatsApp' },
                             { href: 'mailto:example@email.com', img: 'https://cdn-icons-png.flaticon.com/512/732/732200.png', alt: 'Email' },
-                            { href: 'https://twitter.com/example', img: 'https://cdn-icons-png.flaticon.com/512/733/733635.png', alt: 'X (Twitter)' },
+                            { href: 'https://twitter.com/example', img:xlogo , alt: 'X (Twitter)' },
                             { href: 'https://linkedin.com/in/example', img: 'https://cdn-icons-png.flaticon.com/512/145/145807.png', alt: 'LinkedIn' }
                         ].map((icon, index) => (
                             <a key={index} href={icon.href} target="_blank" rel="noopener noreferrer" aria-label={icon.alt}>

@@ -23,9 +23,13 @@ mongoose
 // Routes
 const authRoutes = require("./routes/authRoutes");
 const taxFormsRoutes = require("./routes/taxForms"); // Import taxForms route
+const profileRoutes = require("./routes/profile"); // Import profile route
+const contactRoutes = require("./routes/contact"); // Import contact route
 
 app.use("/api/auth", authRoutes);
 app.use("/api/taxforms", taxFormsRoutes); // Register taxForms route
+app.use("/api/profile", profileRoutes); // Register profile route
+app.use("/api/contact", contactRoutes); // Register contact route
 
 // Start the server
 const PORT = process.env.PORT || 5000;

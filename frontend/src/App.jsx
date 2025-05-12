@@ -14,6 +14,8 @@ import TaxForm2 from "./pages/TaxForm2";
 import TaxForm3 from "./pages/TaxForm3";
 import TaxForm4 from "./pages/TaxForm4";
 import Navbar from "./pages/Navbar";
+import letter from "./pages/letter";
+import LetterTranslation from "./pages/letter";
 
 
 function App() {
@@ -36,6 +38,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/letter" element={<LetterTranslation />} />
+
+
       </Routes>
     </Router>
   );

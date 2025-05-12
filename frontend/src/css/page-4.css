@@ -27,7 +27,7 @@ body {
 
 .section-label {
     color: #ff4c4c;
-    font-size: 14px;
+    font-size: 28px;
     text-transform: uppercase;
     margin: 0;
 }
@@ -53,6 +53,7 @@ h1 {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin-top: 20px;
+    
 }
 
 .stat {

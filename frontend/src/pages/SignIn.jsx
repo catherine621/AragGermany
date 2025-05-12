@@ -37,8 +37,8 @@ const SignIn = () => {
   return (
     <div className="signin-container">
       <div className="signin-box">
-        <h2>Let's Register Account</h2>
-        <p>Hello user, you have a great journey ahead!</p>
+        <h2 className="h">Let's Register Account</h2>
+        <p className="l">Hello user, have a great journey ahead!</p>
 
         <input type="text" name="username" placeholder="Name" onChange={handleChange} /> {/* ✅ Corrected field name */}
         <input type="text" name="lastName" placeholder="Last Name" onChange={handleChange} />
@@ -48,7 +48,9 @@ const SignIn = () => {
 
         <button className="signin-btn" onClick={handleSubmit}>Sign Up</button>
 
-        <p>Already have an account? <Link to="/login">Login</Link></p>
+        <p style={{ color: "gray" }}>
+  Already have an account? <Link to="/login">Login</Link>
+</p>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./letter.css";
+import '../css/letter.css';
+
 
 const LetterTranslation = () => {
   const [from, setFrom] = useState("");

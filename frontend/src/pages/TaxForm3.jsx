@@ -70,7 +70,9 @@ const TaxForm3 = () => {
 
   return (
     <div className="form-container">
-      
+        <h2 className="m">Tax Form for Person  not Maried and not Migrant </h2>
+
+        <div className="section">
       {[  
         { label: "4. Tax Number", name: "4." },
         { label: "5. To the tax office", name: "5." },
@@ -88,7 +90,10 @@ const TaxForm3 = () => {
             <input type={type} name={name} value={formData[name] || ""} onChange={(e) => handleChange(e, name)} />
           )}
         </div>
-      ))}
+      ))}</div>
+
+
+<div className="section">
       <h3>General Information</h3>
       <h2>Taxable person</h2>
       <h2>Only in case of joint assessment: husband or person A (spouse A / life partner A according to the LPartG)</h2>
@@ -130,7 +135,8 @@ const TaxForm3 = () => {
             <input type={type} name={name} value={formData[name] || ""} onChange={(e) => handleChange(e, name)} />
           )}
         </div>
-      ))}
+      ))}</div>
+      <div className="section">
 
       <h2>Please only fill in lines 23 to 27 if the address details differ from lines 12 to 16.</h2>
       {[
@@ -156,7 +162,8 @@ const TaxForm3 = () => {
             <input type={type} name={name} value={formData[name] || ""} onChange={(e) => handleChange(e, name)} />
           )}
         </div>
-      ))}
+      ))}</div>
+      <div className="section">
 
       <h2>Bank Details - Please always specify</h2>
 
@@ -181,7 +188,7 @@ const TaxForm3 = () => {
       ))}
         
         <button className="submit-button" onClick={handleSubmit}>Submit</button>
-    </div>
+    </div></div>
   );
 };
 

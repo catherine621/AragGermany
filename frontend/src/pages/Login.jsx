@@ -116,7 +116,8 @@ const Login = () => {
               className="toggle-password"
               onClick={() => setShowPassword(!showPassword)}
               aria-label="Toggle password visibility"
-            >
+              style={{ background: "none", border: "none", cursor: "pointer" }}
+>
               {showPassword ? "🙈" : "👁️"}
             </button>
           </div>
